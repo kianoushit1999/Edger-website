@@ -202,6 +202,15 @@ ul{
     height: 100%;   
 }
 
+#about-us{
+    padding: 1rem 0;
+    text-align: center;
+}
+
+#about-us h1{
+    font-size: 3rem;
+    text-shadow: 2px 5px 5px rgb(107, 101, 101);
+}
 .btn-transparant:hover{
     background-color: #333;
     color: #fff;
