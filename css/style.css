@@ -25,13 +25,10 @@ ul{
     color: #FFC300;
 }
 
-header, .container{
-    width: 100%;
-    height: 100%;
-}
-
 .container{
-    position: absolute;
+    width: 100%;
+    height: 100vh;
+    position: relative;
 }
 
 #navbar  h1{
@@ -62,7 +59,7 @@ header, .container{
 }
 
 #sideshow{
-    height: 100vh;
+    height: 100%;
     background: url("../images/home/showcase.jpg") no-repeat center center/cover;
     position: relative;
     top: 0;
@@ -104,13 +101,99 @@ header, .container{
     border-bottom: 1px solid #FFC300;
 }
 
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0rem;
+}
+
+.box-items{
+    margin: 3rem 0;
+    text-align: center;
+}
+
+.box-items *{
+    padding: 0.4rem 0.5rem;
+}
+
+.box-items i{
+    padding: 1rem;
+    background-color: #FFC300;
+    color: #333;
+    border-radius: 50%;
+}
+
+#about-content{
+    background: #FFC300;
+}
+
+.btn-transparant{
+    padding: 0.5rem 0.8rem;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    color: #333;
+}
+
+.row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.column-2{
+    background: #FFC300;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.column-1, .column-2{
+    height: 100%;
+}
+
+.column-2 * {
+    margin: 0.8rem 1rem;
+}
+
+.column-1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.btn-transparant:hover{
+    background-color: #333;
+    color: #fff;
+}
+
+.box-items i:hover{
+    background-color: #15537c;
+    color: #fff;
+}
+
 
 
 @media (max-width:700px) and (min-width: 501px){
     #sideshow-content h1{
         font-size: 2em;
     }
-    
+
+    .box, .row{
+        display: block;
+    }
+
 }
 
 @media (max-width: 500px){
@@ -128,5 +211,9 @@ header, .container{
     
     .flex-item-li{
         padding: 0 0.5em;
+    }
+
+    .box, .row{
+        display: block;
     }
 }
